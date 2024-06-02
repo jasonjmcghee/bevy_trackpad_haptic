@@ -16,6 +16,14 @@ cargo run --example simple
 ## Usage
 
 ```rust
+fn main() {
+    App::new()
+        .add_plugins((MinimalPlugins, TrackpadHapticPlugin))
+        .add_systems(Update, important_system)
+        .run();
+}
+
+// Everything important
 
 fn important_system(mut feedback_event_writer: EventWriter<FeedbackEvent>) {
     // Something happens like damage to the player!
