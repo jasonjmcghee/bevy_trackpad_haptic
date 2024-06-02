@@ -38,12 +38,11 @@ fn important_system(mut feedback_event_writer: EventWriter<FeedbackEvent>) {
 }
 ```
 
+## Compatibility
+| bevy | bevy_trackpad_haptic |
+|------|----------------------|
+| 0.13 | 0.1                  |
 
 ## License
 
 * [MIT License](LICENSE)
-
-
-| bevy | bevy_trackpad_haptic |
-|------|----------------------|
-| 0.13 | 0.1                  |
