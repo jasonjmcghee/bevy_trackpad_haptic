@@ -3,11 +3,11 @@ use bevy::MinimalPlugins;
 use bevy::prelude::{EventWriter, Res};
 use bevy::time::Time;
 
-use bevy_trackpad_haptic::{FeedbackEvent, HapticFeedbackPlugin};
+use bevy_trackpad_haptic::{FeedbackEvent, TrackpadHapticPlugin};
 
 fn main() {
     App::new()
-        .add_plugins((MinimalPlugins, HapticFeedbackPlugin))
+        .add_plugins((MinimalPlugins, TrackpadHapticPlugin))
         .add_systems(Update, trigger)
         .run();
 }

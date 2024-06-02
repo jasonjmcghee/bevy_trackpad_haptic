@@ -16,9 +16,9 @@ thread_local! {
     );
 }
 
-pub struct HapticFeedbackPlugin;
+pub struct TrackpadHapticPlugin;
 
-impl Plugin for HapticFeedbackPlugin {
+impl Plugin for TrackpadHapticPlugin {
     fn build(&self, app: &mut App) {
         // Initialize the main thread marker and NSApplication on startup
         app
